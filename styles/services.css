@@ -1,0 +1,27 @@
+/* Estilos para a seção de serviços (.services) */
+.services {
+  /* Define a cor de fundo da seção como var(--gray-100) */
+  background: var(--gray-100);
+
+  /* Usa flexbox para organizar os elementos em uma coluna */
+  flex-direction: column;
+
+  /* Centraliza os itens no eixo principal e no eixo transversal */
+  justify-content: center;
+  align-items: center;
+
+  /* Define o espaçamento interno (padding) superior e inferior da seção */
+  padding: 88px 0 120px;
+}
+
+/* Estilos para o elemento figure dentro da classe .services */
+figure {
+  /* Adiciona espaçamento interno ao container figure */
+  padding: 20px;
+}
+
+/* Estilos para o figcaption (legenda) dentro do figure */
+figcaption {
+  /* Adiciona espaçamento superior à legenda da imagem */
+  padding-top: 20px;
+}

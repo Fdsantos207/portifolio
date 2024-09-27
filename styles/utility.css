@@ -1,0 +1,103 @@
+/* Estilos para o layout flexível (flexbox) */
+.flex {
+  display: flex; /* Ativa o Flexbox */
+}
+
+/* Estilos para o layout de grade (grid) */
+.grid {
+  display: grid; /* Ativa o Grid Layout */
+}
+
+/* Define três colunas iguais no grid */
+.temp-col-3 {
+  grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas de igual largura */
+}
+
+/* Define o espaçamento (gap) entre os itens */
+.gap-24 {
+  gap: 24px; /* Define um espaçamento de 24px entre os elementos */
+}
+
+/* Estilos para a seção de título */
+.title {
+  display: flex; /* Ativa o Flexbox */
+  flex-direction: column; /* Organiza os itens na vertical */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  gap: 8px; /* Define um espaçamento de 8px entre os itens */
+  padding-bottom: 56px; /* Adiciona um espaçamento inferior de 56px */
+}
+
+/* Estilos para o subtítulo */
+.subtitle {
+  color: var(--red); /* Define a cor do texto como vermelho */
+  font: var(--subtitle); /* Usa a variável de fonte definida para subtítulos */
+}
+
+/* Estilos para o título de tamanho médio */
+.title-md {
+  color: var(--gray-600); /* Define a cor do texto como um cinza escuro */
+  font: var(--title-bold-md); /* Usa a fonte de título médio com peso bold */
+}
+
+/* Estilos para o container de cartões */
+.card {
+  position: relative; /* Define o posicionamento como relativo */
+}
+
+/* Estilos para cada cartão individual */
+.card {
+  h2 {
+    font: var(--title-bold-sm); /* Define a fonte do título pequeno do cartão */
+    color: var(--gray-600); /* Define a cor do título como cinza escuro */
+    padding-bottom: 8px; /* Adiciona um espaçamento inferior de 8px no título */
+  }
+
+  span {
+    color: var(--gray-500); /* Define a cor do texto como cinza claro */
+    font: var(--text-sm); /* Usa a fonte para textos pequenos */
+  }
+  .project-cards {
+    display: flex; /* Usa flexbox para organizar os cards */
+    justify-content: center; /* Centraliza os cards horizontalmente */
+    flex-wrap: wrap; /* Permite que os cards quebrem linha, se necessário */
+    gap: 100px; /* Espaçamento entre os cards */
+    padding: 20px; /* Espaçamento interno para os cards */
+  }
+  
+  .project-card {
+    width: 400px; /* Define um tamanho fixo para todos os cards */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    background: var(--gray-300); /* Mantém a cor de fundo original */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra para dar profundidade */
+    transition: transform 0.3s ease; /* Adiciona transição para hover */
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px); /* Eleva o card ao passar o mouse */
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 16px; /* Espaçamento abaixo da imagem */
+  }
+  
+  .project-card h2 {
+    font: var(--title-bold-sm);
+    color: var(--gray-600); /* Mantém a cor do título original */
+    padding-bottom: 8px;
+    text-align: center; /* Centraliza o texto do título */
+  }
+  
+  .project-card span {
+    color: var(--gray-500); /* Mantém a cor da descrição original */
+    font: var(--text-sm);
+    text-align: center; /* Centraliza o texto da descrição */
+  }
+  
+}

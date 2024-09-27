@@ -1,0 +1,121 @@
+/* Estilo para a seção de contatos */
+.contacts {
+  /* Define uma imagem de fundo para a seção de contatos */
+  background: url(../assests/background/Background_Contacts.png);
+  
+  /* Garante que a imagem de fundo cubra todo o container sem distorções */
+  object-fit: cover;
+  
+  /* Define espaçamento interno na parte superior e inferior da seção */
+  padding: 120px 0 200px;
+}
+
+/* Estilo para o título da seção de contatos */
+.title-contact {
+  /* Define um espaçamento entre os elementos dentro da seção de título */
+  gap: 8px;
+
+  /* Estilo para o segundo título (h2) */
+  h2 {
+    /* Define a cor do texto utilizando uma variável */
+    color: var(--purple);
+    
+    /* Aplica o estilo de fonte definido na variável de subtítulo */
+    font: var(--subtitle);
+  }
+
+  /* Estilo para o terceiro título (h3) */
+  h3 {
+    /* Define a cor do texto utilizando uma variável */
+    color: var(--gray-600);
+    
+    /* Aplica o estilo de fonte definido para o título médio */
+    font: var(--title-bold-md);
+  }
+
+  /* Estilo para o elemento span */
+  span {
+    /* Define o estilo de texto médio utilizando uma variável */
+    font: var(--text-md);
+    
+    /* Define a cor do texto utilizando uma variável */
+    color: var(--gray-500);
+  }
+}
+
+/* Estilo para a seção de mídias sociais */
+.social-midia {
+  /* Usa flexbox para organizar os elementos em uma coluna */
+  display: flex;
+  
+  /* Define a direção dos elementos como coluna */
+  flex-direction: column;
+  
+  /* Centraliza os elementos horizontalmente */
+  align-items: center;
+  
+  /* Define um espaçamento entre os elementos */
+  gap: 16px;
+
+  /* Estilo para os ícones de mídia social */
+  .social {
+    /* Define a largura e altura dos ícones de mídia social */
+    width: 28px;
+    height: 28px;
+  }
+
+  /* Estilo para o link de mídia social ao passar o mouse */
+  a:hover {
+    /* Adiciona uma borda azul ao passar o mouse sobre o link */
+    border: 1px solid var(--blue);
+  }
+
+  /* Estilo para o ícone dentro do link ao passar o mouse */
+  a:hover .social-icon path {
+    /* Altera a cor do ícone ao passar o mouse */
+    fill: var(--blue);
+  }
+
+  /* Estilo para o ícone de seta */
+  .arrow {
+    /* Define o tamanho da seta */
+    height: 20px;
+    width: 20px;
+  }
+
+  /* Estilo padrão para o link de mídia social */
+  a {
+    /* Define a cor do texto */
+    color: var(--gray-500);
+    
+    /* Define a fonte do texto utilizando uma variável */
+    font: var(--text-social);
+    
+    /* Remove a sublinha dos links */
+    text-decoration: none;
+    
+    /* Define a cor de fundo do link */
+    background: var(--gray-300);
+    
+    /* Adiciona bordas arredondadas */
+    border-radius: 8px;
+    
+    /* Define um espaçamento entre os itens dentro do link */
+    gap: 12px;
+
+    /* Define a largura do link */
+    width: 400px;
+    
+    /* Define o espaçamento interno */
+    padding: 20px;
+    
+    /* Usa flexbox para organizar os elementos dentro do link */
+    display: flex;
+    
+    /* Centraliza os elementos verticalmente */
+    align-items: center;
+    
+    /* Distribui os itens horizontalmente com espaço entre eles */
+    justify-content: space-between;
+  }
+}

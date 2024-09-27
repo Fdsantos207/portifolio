@@ -1,0 +1,148 @@
+/* Estilos para a seção de informações */
+.info {
+  /* Define uma imagem de fundo para a seção */
+  background: url(../assests/background/Background_Intro.png);
+  
+  /* Garante que a imagem de fundo cubra o container sem distorcer */
+  object-fit: cover;
+  
+  /* Usa flexbox para organizar os itens em uma coluna */
+  display: flex;
+  flex-direction: column;
+  
+  /* Centraliza os itens horizontalmente */
+  align-items: center;
+
+  /* Define o espaçamento interno acima e abaixo da seção */
+  padding-block: 120px 56px;
+
+  /* Estilos para o título principal (h1) */
+  h1 {
+    /* Define a cor do título */
+    color: var(--gray-600);
+    
+    /* Aplica o estilo de fonte definido para títulos grandes */
+    font: var(--title-lg);
+    
+    /* Define a margem ao redor do título */
+    margin: 8px 0 20px;
+  }
+
+  /* Estilos para o subtítulo (h2) */
+  h2 {
+    /* Define a cor do subtítulo */
+    color: var(--gray-500);
+    
+    /* Aplica o estilo de fonte definido para subtítulos */
+    font: var(--subtitle);
+  }
+
+  /* Estilo para o elemento strong (texto em negrito) */
+  strong {
+    /* Define a cor do texto em negrito */
+    color: var(--red);
+  }
+
+  /* Estilos para o elemento span */
+  span {
+    /* Aplica o estilo de fonte para texto pequeno */
+    font: var(--text-sm);
+    
+    /* Define a cor do texto */
+    color: var(--gray-400);
+    
+    /* Adiciona uma margem inferior */
+    margin-bottom: 80px;
+  }
+}
+
+/* Estilos para a seção do avatar */
+.avatar {
+  /* Define a margem inferior para o avatar */
+  margin-bottom: 56px;
+
+  /* Estilos para a imagem do avatar */
+  img {
+    /* Adiciona uma borda vermelha ao redor do avatar */
+    border: 4px solid var(--red);
+    
+    /* Define a largura da imagem */
+    width: 87px;
+    
+    /* Arredonda as bordas para criar um formato circular */
+    border-radius: 50%;
+  }
+
+  /* Estilos para o ícone de código ao lado do avatar */
+  .code {
+    /* Remove a borda padrão */
+    border: none;
+    
+    /* Define o tamanho da imagem do ícone */
+    width: 32px;
+    height: 32px;
+    
+    /* Garante que a imagem mantenha suas proporções */
+    object-fit: cover;
+    
+    /* Mantém a proporção da imagem */
+    aspect-ratio: 1/1;
+
+    /* Posiciona o ícone relativamente ao avatar */
+    position: relative;
+    
+    /* Move o ícone para a direita */
+    right: 30px;
+  }
+}
+
+/* Estilos para a seção de tecnologias (stack) */
+.stack {
+  /* Usa flexbox para organizar os itens em uma linha */
+  display: flex;
+  
+  /* Distribui os itens com espaço entre eles */
+  justify-content: space-between;
+  
+  /* Define o espaçamento entre os itens */
+  gap: 16px;
+  
+  /* Adiciona um espaçamento inferior */
+  padding-bottom: 94px;
+
+  /* Estilos para os links das tecnologias */
+  a {
+    /* Define o espaçamento interno do link */
+    padding: 8px 16px;
+    
+    /* Arredonda completamente as bordas */
+    border-radius: 999px;
+    
+    /* Define a cor de fundo do link */
+    background: var(--gray-300);
+    
+    /* Remove a sublinha dos links */
+    text-decoration: none;
+    
+    /* Aplica o estilo de fonte médio */
+    font: var(--text-md);
+    
+    /* Define a cor do texto */
+    color: var(--gray-500);
+    
+    /* Define o espaçamento entre o ícone e o texto */
+    gap: 8px;
+
+    /* Usa flexbox para centralizar o conteúdo do link */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Estilos para as imagens dentro dos links */
+  img {
+    /* Define o tamanho das imagens */
+    width: 24px;
+    height: 24px;
+  }
+}

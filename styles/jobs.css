@@ -1,0 +1,54 @@
+/* Estilos para a seção de trabalhos (jobs) */
+.jobs {
+  /* Define o espaçamento interno (padding) da seção */
+  padding: 72px 120px;
+
+  /* Define a cor de fundo da seção */
+  background: var(--gray-200);
+
+  /* Usa flexbox para organizar os elementos verticalmente */
+  display: flex;
+  flex-direction: column;
+
+  /* Centraliza os elementos horizontalmente */
+  align-items: center;
+
+  /* Estilos para o elemento figure (envolve as imagens dos trabalhos) */
+  figure {
+    /* Define o fundo do container figure */
+    background: var(--gray-300);
+    
+    /* Arredonda as bordas do container */
+    border-radius: 12px;
+    
+    /* Adiciona espaçamento interno ao figure */
+    padding: 12px;
+    
+    /* Define a largura máxima do container figure */
+    width: 330px;
+
+    /* Estilos para as imagens dentro do figure */
+    img {
+      /* Define a largura da imagem */
+      width: 306px;
+
+      /* Define a altura da imagem */
+      height: 156px;
+
+      /* Adiciona um espaçamento inferior à imagem */
+      padding-bottom: 20px;
+    }
+  }
+
+  /* Estilos aplicados quando o figure é "hover" (quando o mouse passa por cima) */
+  figure:hover {
+    /* Adiciona uma borda ao container figure quando ele é hover */
+    border: 1.5px solid var(--gray-400);
+  }
+
+  /* Estilos gerais para as imagens dentro de .jobs */
+  img {
+    /* Arredonda as bordas das imagens */
+    border-radius: 8px;
+  }
+}
