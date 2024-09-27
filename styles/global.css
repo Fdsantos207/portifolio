@@ -1,62 +1,53 @@
-/* Redefine o estilo padrão para todos os elementos, removendo padding e margem, 
-   e usa o box-sizing para incluir bordas e padding no cálculo da largura/altura */
-   * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Define as variáveis CSS globais que podem ser usadas em todo o código */
-  :root {
-    /* Cores principais */
-    --red: #ff0015;        /* Cor vermelha */
-    --purple: #005272;     /* Cor roxa */
-    --blue: #3996db;       /* Cor azul */
-    --green: #1900ff;      /* Cor verde */
-    /* Atenção: o nome da variável yellow está com um hífen inicial que deve ser removido */
-    --yellow: #ffae00;     /* Cor amarela */
-  
-    /* Escalas de cinza */
-    --gray-100: #0d0e11;   /* Cinza muito escuro */
-    --gray-200: #16181d;   /* Cinza escuro */
-    --gray-300: #292c34;   /* Cinza intermediário */
-    --gray-400: #878ea1;   /* Cinza claro */
-    --gray-500: #c0c4ce;   /* Cinza muito claro */
-    --gray-600: #e2e4e9;   /* Quase branco */
-  
-    /* Definições de famílias de fontes */
-    --font-family-Asap: "Asap", sans-serif;           /* Fonte Asap */
-    --font-family-Inconsolata: "Inconsolata", sans-serif; /* Fonte Inconsolata */
-    --font-family-MavenPro: "Maven Pro", sans-serif;   /* Fonte Maven Pro */
-  
-    /* Estilos de títulos com diferentes tamanhos e pesos */
-    --title-lg: 700 56px/120% var(--font-family-Asap); /* Título grande */
-    --title-bold-md: 700 24px/120% var(--font-family-Asap); /* Título médio */
-    --title-bold-sm: 700 16px/120% var(--font-family-Asap); /* Título pequeno */
-  
-    /* Estilos para subtítulos e textos */
-    --subtitle: 400 20px/120% var(--font-family-Inconsolata); /* Subtítulo */
-    --text-md: 400 16px/140% var(--font-family-MavenPro); /* Texto médio */
-    --text-sm: 400 14px/140% var(--font-family-MavenPro); /* Texto pequeno */
-    --text-social: 500 16px/140% var(--font-family-MavenPro); /* Texto para mídias sociais */
-  }
-  
-  /* Define o estilo de fundo para o corpo da página */
-  body {
-    background: var(--gray-300); /* Cor de fundo cinza intermediária */
-  }
-  
-  /* Estilo para o elemento com id 'page', adicionando padding */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --red: #ff0015;
+  --purple: #005272;
+  --blue: #3996db;
+  --green: #1900ff;
+  --yellow: #ffae00;
+
+  --gray-100: #0d0e11;
+  --gray-200: #16181d;
+  --gray-300: #292c34;
+  --gray-400: #878ea1;
+  --gray-500: #c0c4ce;
+  --gray-600: #e2e4e9;
+
+  --font-family-Asap: "Asap", sans-serif;
+  --font-family-Inconsolata: "Inconsolata", sans-serif;
+  --font-family-MavenPro: "Maven Pro", sans-serif;
+
+  --title-lg: 700 56px/120% var(--font-family-Asap);
+  --title-bold-md: 700 24px/120% var(--font-family-Asap);
+  --title-bold-sm: 700 16px/120% var(--font-family-Asap);
+
+  --subtitle: 400 20px/120% var(--font-family-Inconsolata);
+  --text-md: 400 16px/140% var(--font-family-MavenPro);
+  --text-sm: 400 14px/140% var(--font-family-MavenPro);
+  --text-social: 500 16px/140% var(--font-family-MavenPro);
+}
+
+body {
+  background: var(--gray-300);
+}
+
+#page {
+  padding: 80px;
+}
+
+img {
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
   #page {
-    padding: 80px; /* Espaçamento interno de 80px */
+    padding: 40px; /* Adapta padding em telas menores */
   }
-  
-  /* Estilo para todas as imagens */
-  img {
-    /* Faz com que a imagem se ajuste ao tamanho do container mantendo a proporção */
-    object-fit: cover;
-  
-    /* Define a proporção da imagem como 1:1 (quadrada) */
-    aspect-ratio: 1/1;
-  }
-  
+}
