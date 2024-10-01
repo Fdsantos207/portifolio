@@ -1,0 +1,338 @@
+/* Global Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --red: #ff0015;
+    --purple: #005272;
+    --blue: #3996db;
+    --green: #1900ff;
+    --yellow: #ffae00;
+  
+    --gray-100: #0d0e11;
+    --gray-200: #16181d;
+    --gray-300: #292c34;
+    --gray-400: #878ea1;
+    --gray-500: #c0c4ce;
+    --gray-600: #e2e4e9;
+  
+    --font-family-Asap: "Asap", sans-serif;
+    --font-family-Inconsolata: "Inconsolata", sans-serif;
+    --font-family-MavenPro: "Maven Pro", sans-serif;
+  
+    --title-lg: 700 56px/120% var(--font-family-Asap);
+    --title-bold-md: 700 24px/120% var(--font-family-Asap);
+    --title-bold-sm: 700 16px/120% var(--font-family-Asap);
+  
+    --subtitle: 400 20px/120% var(--font-family-Inconsolata);
+    --text-md: 400 16px/140% var(--font-family-MavenPro);
+    --text-sm: 400 14px/140% var(--font-family-MavenPro);
+    --text-social: 500 16px/140% var(--font-family-MavenPro);
+  }
+  
+  body {
+    background: var(--gray-300);
+  }
+  
+  #page {
+    padding: 80px;
+  }
+  
+  img {
+    object-fit: cover;
+    aspect-ratio: 1/1;
+  }
+  
+  /* Contacts */
+  .contacts {
+    background: url(../assests/background/Background_Contacts.png);
+    object-fit: cover;
+    padding: 120px 0 200px;
+  }
+  
+  .title-contact {
+    gap: 8px;
+  
+    h2 {
+      color: var(--purple);
+      font: var(--subtitle);
+    }
+  
+    h3 {
+      color: var(--gray-600);
+      font: var(--title-bold-md);
+    }
+  
+    span {
+      font: var(--text-md);
+      color: var(--gray-500);
+    }
+  }
+  
+  .social-midia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  
+    .social {
+      width: 28px;
+      height: 28px;
+    }
+  
+    a:hover {
+      border: 1px solid var(--blue);
+    }
+  
+    a:hover .social-icon path {
+      fill: var(--blue);
+    }
+  
+    .arrow {
+      height: 20px;
+      width: 20px;
+    }
+  
+    a {
+      color: var(--gray-500);
+      font: var(--text-social);
+      text-decoration: none;
+      background: var(--gray-300);
+      border-radius: 8px;
+      gap: 12px;
+      width: 400px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  
+  /* Info */
+  .info {
+    background: url(../assests/background/Background_Intro.png);
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 120px 56px;
+  
+    h1 {
+      color: var(--gray-600);
+      font: var(--title-lg);
+      margin: 8px 0 20px;
+    }
+  
+    h2 {
+      color: var(--gray-500);
+      font: var(--subtitle);
+    }
+  
+    strong {
+      color: var(--red);
+    }
+  
+    span {
+      font: var(--text-sm);
+      color: var(--gray-400);
+      margin-bottom: 80px;
+    }
+  }
+  
+  .avatar {
+    margin-bottom: 56px;
+  
+    img {
+      border: 4px solid var(--red);
+      width: 87px;
+      border-radius: 50%;
+    }
+  
+    .code {
+      border: none;
+      width: 32px;
+      height: 32px;
+      object-fit: cover;
+      aspect-ratio: 1/1;
+      position: relative;
+      right: 30px;
+    }
+  }
+  
+  .stack {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding-bottom: 94px;
+  
+    a {
+      padding: 8px 16px;
+      border-radius: 999px;
+      background: var(--gray-300);
+      text-decoration: none;
+      font: var(--text-md);
+      color: var(--gray-500);
+      gap: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  
+  /* Jobs */
+  .jobs {
+    padding: 72px 120px;
+    background: var(--gray-200);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    figure {
+      background: var(--gray-300);
+      border-radius: 12px;
+      padding: 12px;
+      width: 330px;
+  
+      img {
+        width: 306px;
+        height: 156px;
+        padding-bottom: 20px;
+      }
+    }
+  
+    figure:hover {
+      border: 1.5px solid var(--gray-400);
+    }
+  
+    img {
+      border-radius: 8px;
+    }
+  }
+  
+  /* Services */
+  .services {
+    background: var(--gray-100);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 88px 0 120px;
+  
+    figure {
+      padding: 20px;
+  
+      figcaption {
+        padding-top: 20px;
+      }
+    }
+  }
+  
+  /* Utility */
+  .flex {
+    display: flex;
+  }
+  
+  .grid {
+    display: grid;
+  }
+  
+  .temp-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .gap-24 {
+    gap: 24px;
+  }
+  
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 56px;
+  }
+  
+  .subtitle {
+    color: var(--red);
+    font: var(--subtitle);
+  }
+  
+  .title-md {
+    color: var(--gray-600);
+    font: var(--title-bold-md);
+  }
+  
+  .cards {
+    position: relative;
+    align-items: center
+  }
+  
+  .card {
+    h2 {
+      font: var(--title-bold-sm);
+      color: var(--gray-600);
+      padding-bottom: 8px;
+    }
+  
+    span {
+      color: var(--gray-500);
+      font: var(--text-sm);
+    }
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    /* Contacts */
+    .contacts {
+      padding: 60px 0;
+    }
+  
+    .social-midia a {
+      width: 100%; /* Adapta largura em telas menores */
+    }
+  
+    /* Info */
+    .info {
+      padding-block: 80px 40px;
+    }
+  
+    .avatar img {
+      width: 200px; /* Adapta a largura do avatar */
+    }
+  
+    /* Jobs */
+    .jobs {
+      padding: 40px 20px; /* Adapta o padding em telas menores */
+    }
+  
+    figure {
+      width: 100%; /* Permite que o figure ocupe toda a largura */
+    }
+  
+    /* Services */
+    .services {
+      padding: 60px 20px; /* Adapta o padding em telas menores */
+    }
+  
+    /* Utility */
+    .temp-col-3 {
+      grid-template-columns: repeat(2, 1fr); /* Reduz para 2 colunas em telas menores */
+    }
+  
+    .gap-24 {
+      gap: 16px; /* Reduz o gap em telas menores */
+    }
+  
+    /* Global */
+    #page {
+      padding: 40px; /* Adapta padding em telas menores */
+    }
+  }
+  
