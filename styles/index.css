@@ -191,7 +191,7 @@ img {
 
 /* Jobs */
 .jobs {
-  padding: 72px 120px;
+  padding: 50px 100px;
   background: var(--gray-200);
   display: flex;
   flex-direction: column;
@@ -199,12 +199,12 @@ img {
 
   figure {
       background: var(--gray-300);
-      border-radius: 12px;
-      padding: 12px;
-      width: 330px;
+      border-radius: 10px;
+      padding: 10px;
+      width: 280px;
 
       img {
-          width: 306px;
+          width: 250px;
           height: 156px;
           padding-bottom: 20px;
       }
@@ -311,7 +311,11 @@ img {
 
   /* Jobs */
   .jobs {
-      padding: 20px 10px; /* Adapta o padding em telas menores */
+    padding: 50px 100px;
+    background: var(--gray-200);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   figure {
