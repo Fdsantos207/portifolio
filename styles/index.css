@@ -334,11 +334,11 @@ img {
   }
 
   .gap-24 {
-      gap: 5px; /* Reduz o gap em telas menores */
+      gap: 2px; /* Reduz o gap em telas menores */
   }
 
   /* Global */
   #page {
-      padding: 5px; /* Adapta padding em telas menores */
+      padding: 2px; /* Adapta padding em telas menores */
   }
 }
