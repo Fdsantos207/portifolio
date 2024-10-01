@@ -293,7 +293,7 @@ img {
 @media (max-width: 768px) {
   /* Contacts */
   .contacts {
-      padding: 60px 0;
+      padding: 100px 50;
   }
 
   .social-midia a {
@@ -302,16 +302,16 @@ img {
 
   /* Info */
   .info {
-      padding-block: 80px 40px;
+      padding-block: 50px 40px;
   }
 
   .avatar img {
-      width: 70px; /* Adapta a largura do avatar */
+      width: 100px; /* Adapta a largura do avatar */
   }
 
   /* Jobs */
   .jobs {
-      padding: 40px 20px; /* Adapta o padding em telas menores */
+      padding: 20px 10px; /* Adapta o padding em telas menores */
   }
 
   figure {
@@ -320,7 +320,7 @@ img {
 
   /* Services */
   .services {
-      padding: 60px 20px; /* Adapta o padding em telas menores */
+      padding: 100px 20px; /* Adapta o padding em telas menores */
   }
 
   /* Stack */
@@ -334,11 +334,11 @@ img {
   }
 
   .gap-24 {
-      gap: 16px; /* Reduz o gap em telas menores */
+      gap: 5px; /* Reduz o gap em telas menores */
   }
 
   /* Global */
   #page {
-      padding: 40px; /* Adapta padding em telas menores */
+      padding: 5px; /* Adapta padding em telas menores */
   }
 }
