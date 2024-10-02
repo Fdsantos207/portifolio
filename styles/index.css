@@ -1,3 +1,4 @@
+
 /* Global Styles */
 * {
   padding: 0;
@@ -165,7 +166,7 @@ img {
 
 .stack {
   display: flex;
-  flex-direction: column; /* Organiza em coluna */
+  flex-direction: row; /* Organiza em coluna */
   align-items: center;
   padding: 20px; /* Afastando as bordas laterais */
   gap: 16px;
@@ -199,7 +200,7 @@ img {
 /* Jobs */
 .jobs {
   background: var(--gray-100);
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 88px 20px; /* Afastando as bordas laterais */
@@ -316,18 +317,30 @@ img {
       width: 200px; /* Adapta a largura do avatar */
   }
 
+  .stack {
+    display: grid; /* Usando Grid */
+    grid-template-columns: repeat(2, 1fr); /* 2 itens por linha */
+    align-items: center; /* Centraliza os itens verticalmente */
+    padding: 20px; /* Afastando as bordas laterais */
+    gap: 16px; /* Espaçamento entre os itens */
+}
+
+
   /* Jobs */
   .jobs {
-      padding: 40px 20px; /* Adapta o padding em telas menores */
-      background: var(--gray-100);
-  flex-direction: column;
+    padding: 60px 20px; /* Afastando as bordas laterais */
+    display: flex; /* Ou 'grid' se estiver usando Grid Layout */
+    gap: 50px; /* Define o espaçamento entre os itens */
+    flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 88px 20px; /* Afastando as bordas laterais */
+
   }
+  
 
   figure {
-      width: 100%; /* Permite que o figure ocupe toda a largura */
+      width: 80%; /* Permite que o figure ocupe toda a largura */
   }
 
   /* Services */
