@@ -200,10 +200,31 @@ img {
 /* Jobs */
 .jobs {
   background: var(--gray-100);
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 88px 20px; /* Afastando as bordas laterais */
+
+  figure {
+      background: var(--gray-300);
+      border-radius: 12px;
+      padding: 20px; /* Aumente o padding para afastar o texto das bordas */
+      width: 330px;
+
+      img {
+          width: 306px;
+          height: 156px;
+          padding-bottom: 20px;
+      }
+  }
+
+  figure:hover {
+      border: 1.5px solid var(--gray-400);
+  }
+
+  img {
+      border-radius: 8px;
+  }
 }
 
 /* Services */
@@ -307,7 +328,7 @@ img {
 /*jobs*/
 .jobs {
   background: var(--gray-100);
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 88px 20px; /* Afastando as bordas laterais */
@@ -319,9 +340,9 @@ img {
       width: 330px;
 
       img {
-          width: 306px;
-          height: 156px;
-          padding-bottom: 20px;
+          width: 285px;
+          height: 140px;
+          padding-bottom: 10px;
       }
   }
 
