@@ -298,7 +298,7 @@ img {
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 1170px) {
   /* Contacts */
   .contacts {
       padding: 60px 20px; /* Afastando as bordas laterais */
