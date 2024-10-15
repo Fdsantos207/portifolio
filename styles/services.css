@@ -1,0 +1,85 @@
+/* Services */
+.services {
+    background: var(--gray-100);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 88px 20px; /* Afastando as bordas laterais */
+  
+    figure {
+        padding: 20px;
+  
+        figcaption {
+            padding-top: 20px;
+        }
+    }
+  }
+  
+  /* Utility */
+  .flex {
+    display: flex;
+  }
+  
+  .grid {
+    display: grid;
+  }
+  
+  .temp-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .gap-24 {
+    gap: 24px;
+  }
+  
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 56px;
+  }
+  
+  .subtitle {
+    color: var(--red);
+    font: var(--subtitle);
+  }
+  
+  .title-md {
+    color: var(--gray-600);
+    font: var(--title-bold-md);
+  }
+  
+  .cards {
+    position: relative;
+    align-items: center;
+  }
+  
+  .card {
+    h2 {
+        font: var(--title-bold-sm);
+        color: var(--gray-600);
+        padding-bottom: 8px;
+    }
+  
+    span {
+        color: var(--gray-500);
+        font: var(--text-sm);
+    }
+  }
+  @media (max-width: 1170px) {
+    /* Services */
+  .services {
+    padding: 60px 20px; /* Adapta o padding em telas menores */
+}
+
+/* Utility */
+.temp-col-3 {
+    grid-template-columns: repeat(2, 1fr); /* Reduz para 2 colunas em telas menores */
+}
+
+.gap-24 {
+    gap: 5px; /* Reduz o gap em telas menores */
+}
+
+  }
