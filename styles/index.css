@@ -210,22 +210,20 @@ img {
       border-radius: 12px;
       padding: 20px; /* Aumente o padding para afastar o texto das bordas */
       width: 330px;
-      flex-direction: column;
-      justify-content: center;
 
       img {
-          width: 310px;
-          height: 160px;
-          padding-bottom: 25px;
+          width: 306px;
+          height: 156px;
+          padding-bottom: 20px;
       }
   }
 
   figure:hover {
-      border: 1.7px solid var(--gray-400);
+      border: 1.5px solid var(--gray-400);
   }
 
   img {
-      border-radius: 10px;
+      border-radius: 8px;
   }
 }
 
@@ -334,20 +332,10 @@ img {
     display: flex; /* Ou 'grid' se estiver usando Grid Layout */
     gap: 50px; /* Define o espaçamento entre os itens */
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 88px 20px; /* Afastando as bordas laterais */
+  justify-content: center;
+  align-items: center;
+  padding: 88px 20px; /* Afastando as bordas laterais */
 
-  }
-
-  .jobs project-card {
-    padding: 60px 20px; /* Afastando as bordas laterais */
-    display: flex; /* Ou 'grid' se estiver usando Grid Layout */
-    gap: 50px; /* Define o espaçamento entre os itens */
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 88px 20px; /* Afastando as bordas laterais */
   }
   
 
