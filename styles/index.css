@@ -343,6 +343,7 @@ footer{
 
 /*jobs*/
 .jobs {
+  padding: 100px;
   background: var(--gray-100);
   flex-direction: column;
   justify-content: center;
