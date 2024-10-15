@@ -213,7 +213,7 @@ img {
       flex-direction: column;
       justify-content: center;
 }
-.jobs project-card img {
+.jobs img {
           width: 306px;
           height: 156px;
           padding-bottom: 20px;
