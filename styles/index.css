@@ -227,9 +227,7 @@ img {
   }
 
   img {
-      border-radius: 8px;
-      flex-direction: column;
-      justify-content: center;
+      border-radius: 5px;
   }
 }
 
