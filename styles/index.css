@@ -341,35 +341,43 @@ footer{
     gap: 16px; /* Espaçamento entre os itens */
 }
 
-/*jobs*/
+/* Layout principal de jobs */
 .jobs {
-  padding: 100px;
-  background: var(--gray-100);
+  display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  height: 100%; /* Ocupa 100% da altura da tela */
+  width: 100%; /* Ocupa 100% da largura da tela */
   padding: 88px 20px; /* Afastando as bordas laterais */
+  gap: 20px; /* Espaçamento entre figuras */
+  background: var(--gray-100);
+}
 
-  figure {
-      background: var(--gray-300);
-      border-radius: 12px;
-      padding: 20px; /* Aumente o padding para afastar o texto das bordas */
-      width: 330px;
+/* Estilo das figuras */
+.jobs figure {
+  background: var(--gray-300);
+  border-radius: 12px;
+  padding: 20px;
+  width: 90%; /* Responsivo: ocupa 90% da largura disponível */
+  max-width: 330px; /* Limite máximo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: border 0.3s;
+}
 
-      img {
-          width: 285px;
-          height: 140px;
-          padding-bottom: 10px;
-      }
-  }
+.jobs figure:hover {
+  border: 1.5px solid var(--gray-400);
+}
 
-  figure:hover {
-      border: 1.5px solid var(--gray-400);
-  }
-
-  img {
-      border-radius: 8px;
-  }
+/* Imagem dentro da figura */
+.jobs figure img {
+  width: 100%; /* Ocupa toda a largura da figura */
+  max-width: 285px;
+  height: auto; /* Mantém proporção correta */
+  border-radius: 8px;
+  padding-bottom: 10px;
 }
 
   /* Services */
