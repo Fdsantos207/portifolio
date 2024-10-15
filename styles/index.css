@@ -217,14 +217,6 @@ img {
           padding-bottom: 20px;
       }
   }
-
-  figure:hover {
-      border: 1.5px solid var(--gray-400);
-  }
-
-  img {
-      border-radius: 8px;
-  }
 }
 
 /* Services */
