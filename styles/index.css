@@ -342,22 +342,6 @@ footer{
 }
 
 /* Layout principal de jobs */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Estilo do body para ocupar 100% da tela */
-body {
-  min-height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--gray-100);
-}
-
 /* Container jobs, ajustado para responsividade */
 .jobs {
   display: flex;
