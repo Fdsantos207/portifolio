@@ -297,6 +297,22 @@ img {
   }
 }
 
+footer{
+  background-color: #2b2b2ba9;
+}
+#footer_items {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 8% 24px 8%;
+  align-items: center;
+}
+
+#copyright{
+  color: 1d1d1d;
+  font-weight: 500;
+}
+
+
 /* Responsive Styles */
 @media (max-width: 1170px) {
   /* Contacts */
@@ -373,4 +389,10 @@ img {
   #page {
       padding: 5px; /* Adapta padding em telas menores */
   }
+}
+
+/*footer*/
+#footer_items{
+  flex-direction: column;
+  gap: 20px;
 }
