@@ -325,23 +325,35 @@ img {
     gap: 16px; /* Espaçamento entre os itens */
 }
 
-
-  /* Jobs */
-  .jobs {
-    padding: 60px 20px; /* Afastando as bordas laterais */
-    display: flex; /* Ou 'grid' se estiver usando Grid Layout */
-    gap: 30px; /* Define o espaçamento entre os itens */
-    flex-direction: column;
+/*jobs*/
+.jobs {
+  background: var(--gray-100);
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 80px 20px; /* Afastando as bordas laterais */
-
-  }
-  
+  padding: 88px 20px; /* Afastando as bordas laterais */
 
   figure {
-      width: 100%; /* Permite que o figure ocupe toda a largura */
+      background: var(--gray-300);
+      border-radius: 12px;
+      padding: 20px; /* Aumente o padding para afastar o texto das bordas */
+      width: 330px;
+
+      img {
+          width: 306px;
+          height: 156px;
+          padding-bottom: 20px;
+      }
   }
+
+  figure:hover {
+      border: 1.5px solid var(--gray-400);
+  }
+
+  img {
+      border-radius: 8px;
+  }
+}
 
   /* Services */
   .services {
