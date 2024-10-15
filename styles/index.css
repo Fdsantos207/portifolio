@@ -330,17 +330,17 @@ img {
   .jobs {
     padding: 60px 20px; /* Afastando as bordas laterais */
     display: flex; /* Ou 'grid' se estiver usando Grid Layout */
-    gap: 50px; /* Define o espaçamento entre os itens */
+    gap: 30px; /* Define o espaçamento entre os itens */
     flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 88px 20px; /* Afastando as bordas laterais */
+  padding: 80px 20px; /* Afastando as bordas laterais */
 
   }
   
 
   figure {
-      width: 80%; /* Permite que o figure ocupe toda a largura */
+      width: 100%; /* Permite que o figure ocupe toda a largura */
   }
 
   /* Services */
