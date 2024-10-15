@@ -204,13 +204,6 @@ img {
   justify-content: center;
   align-items: center;
   padding: 88px 20px; /* Afastando as bordas laterais */
-
-  figure {
-      background: var(--gray-300);
-      border-radius: 12px;
-      padding: 20px; /* Aumente o padding para afastar o texto das bordas */
-      width: 330px;
-  }
 }
 
 /* Services */
