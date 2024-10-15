@@ -332,10 +332,20 @@ img {
     display: flex; /* Ou 'grid' se estiver usando Grid Layout */
     gap: 50px; /* Define o espaçamento entre os itens */
     flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 88px 20px; /* Afastando as bordas laterais */
+    justify-content: center;
+    align-items: center;
+    padding: 88px 20px; /* Afastando as bordas laterais */
 
+  }
+
+  .jobs project-card {
+    padding: 60px 20px; /* Afastando as bordas laterais */
+    display: flex; /* Ou 'grid' se estiver usando Grid Layout */
+    gap: 50px; /* Define o espaçamento entre os itens */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 88px 20px; /* Afastando as bordas laterais */
   }
   
 
