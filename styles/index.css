@@ -210,11 +210,15 @@ img {
       border-radius: 12px;
       padding: 20px; /* Aumente o padding para afastar o texto das bordas */
       width: 330px;
+      flex-direction: column;
+      justify-content: center;
 
       img {
           width: 306px;
           height: 156px;
           padding-bottom: 20px;
+          flex-direction: column;
+          justify-content: center;
       }
   }
 
@@ -224,6 +228,8 @@ img {
 
   img {
       border-radius: 8px;
+      flex-direction: column;
+      justify-content: center;
   }
 }
 
