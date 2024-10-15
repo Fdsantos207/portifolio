@@ -344,7 +344,7 @@ footer{
 /* Layout principal de jobs */
 /* Container jobs, ajustado para responsividade */
 .jobs {
-  display: flex;
+  display: block;
   flex-direction: column; /* Itens em coluna */
   align-items: center;
   justify-content: flex-start; /* Conteúdo alinhado ao topo */
