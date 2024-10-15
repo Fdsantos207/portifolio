@@ -204,8 +204,8 @@ img {
   justify-content: center;
   align-items: center;
   padding: 88px 20px; /* Afastando as bordas laterais */
-
-  figure {
+}
+.jobs project-card {
       background: var(--gray-300);
       border-radius: 12px;
       padding: 30px; /* Aumente o padding para afastar o texto das bordas */
@@ -220,7 +220,7 @@ img {
       }
   }
 
-  figure:hover {
+  .project-card:hover {
       border: 1.5px solid var(--gray-400);
   }
 
