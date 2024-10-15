@@ -358,8 +358,8 @@ footer{
 .jobs figure {
   background: var(--gray-300);
   border-radius: 12px;
-  padding: 20px;
-  width: 90%; /* Responsivo: ocupa 90% da largura disponível */
+  padding: 100px;
+  width: 100%; /* Responsivo: ocupa 90% da largura disponível */
   max-width: 330px; /* Limite máximo */
   display: flex;
   flex-direction: column;
