@@ -210,12 +210,6 @@ img {
       border-radius: 12px;
       padding: 20px; /* Aumente o padding para afastar o texto das bordas */
       width: 330px;
-
-      img {
-          width: 306px;
-          height: 156px;
-          padding-bottom: 20px;
-      }
   }
 }
 
