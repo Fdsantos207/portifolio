@@ -200,7 +200,7 @@ img {
 /* Jobs */
 .jobs {
   background: var(--gray-100);
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 88px 20px; /* Afastando as bordas laterais */
