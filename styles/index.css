@@ -13,7 +13,7 @@
   --green: #1900ff;
   --yellow: #ffae00;
 
-  --gray-100: #0d0e11;
+  --gray-100: #24293a;
   --gray-200: #16181d;
   --gray-300: #292c34;
   --gray-400: #878ea1;
@@ -344,13 +344,13 @@ footer{
 /* Layout principal de jobs */
 /* Container jobs, ajustado para responsividade */
 .jobs {
-  display: block;
+  display: flex;
   flex-direction: column; /* Itens em coluna */
   align-items: center;
-  justify-content: flex-start; /* Conteúdo alinhado ao topo */
+  justify-content: center; /* Conteúdo alinhado ao topo */
   gap: 20px; /* Espaçamento entre elementos */
   width: 100%; /* Ocupa 100% da largura */
-  min-height: 100vh; /* Ocupa toda a altura da tela */
+  min-height: 100px; /* Ocupa toda a altura da tela */
   padding: 20px;
   background: var(--gray-100);
 }
